@@ -11,10 +11,12 @@
 * {
   box-sizing: border-box;
 }
+
 html,
 body {
   height: 100%;
 }
+
 body {
   font-family:
     "Poppins",
@@ -50,6 +52,7 @@ header {
   gap: 16px;
   margin-bottom: 8px;
 }
+
 .logo-mark {
   width: 52px;
   height: 52px;
@@ -90,6 +93,7 @@ p.badge {
   overflow: hidden;
   margin: 8px 0 20px;
 }
+
 .progress-fill {
   height: 100%;
   width: 0%;
@@ -119,12 +123,14 @@ p.badge {
   margin-bottom: 1em;
   text-align: center;
 }
+
 .answers {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr;
   gap: 10px;
 }
+
 .answer {
   background: var(--vcu-white);
   border: 2px solid #eee;
@@ -135,14 +141,17 @@ p.badge {
   transition: all var(--transition-fast) ease;
   font-size: 15px;
 }
+
 .answer:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
 }
+
 .answer.disabled {
   cursor: default;
   opacity: 0.7;
 }
+
 .answer.selected {
   background: linear-gradient(90deg, var(--vcu-gold), #e0a200);
   color: var(--vcu-black);
@@ -157,6 +166,7 @@ p.badge {
   width: 100%;
   margin-top: 12px;
 }
+
 button.start-btn {
   background: var(--vcu-gold);
   color: var(--vcu-black);
@@ -167,6 +177,7 @@ button.start-btn {
   cursor: pointer;
   box-shadow: 0 6px 18px rgba(241, 179, 0, 0.12);
 }
+
 .muted {
   color: #666;
   font-size: 13px;
@@ -185,6 +196,7 @@ button.start-btn {
   border-radius: 10px;
   text-decoration: none;
 }
+
 .result a.retake {
   display: inline-block;
   margin-left: 12px;
@@ -201,9 +213,11 @@ button.start-btn {
   .quiz-shell {
     padding: 20px;
   }
+  
   .answers {
     gap: 8px;
   }
+  
   .answer {
     padding: 10px;
   }
