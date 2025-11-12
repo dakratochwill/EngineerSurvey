@@ -71,11 +71,15 @@ p.lead {
 
 p.label {
   font-size: 3em;
+  font-weight: bold;
   color: var(--vcu-gold);
+  margin: 0;
 }
 
 p.badge {
   font-size: 2em;
+  font-weight: bold;
+  margin: 0;
 }
 
 /* Progress bar */
