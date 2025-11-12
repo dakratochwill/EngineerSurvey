@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>What Kind of Engineer Are You? — VCU Quiz</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="quiz-styles.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="quiz-shell" role="application" aria-labelledby="quizTitle">
+  <header>
+    <div class="logo-mark" aria-hidden="true">VCU</div>
+    <div>
+      <h1 id="quizTitle">What Kind of Engineer Are You?</h1>
+      <p class="lead">A quick, fun quiz to see which VCU engineering program fits your vibe. Pick the first answer that comes to mind — no changing allowed.</p>
+    </div>
+  </header>
+
+  <div class="progress-wrap" aria-hidden="true">
+    <div class="progress-fill" id="progressFill"></div>
+  </div>
+
+  <!-- card holder -->
+  <main id="cardArea" class="card" aria-live="polite">
+    <!-- intro view (initial) -->
+    <div id="introView">
+      <h2 style="margin:0 0 10px">Ready to find your engineering match?</h2>
+      <p class="muted">7 quick questions • Takes less than a minute • Results after email</p>
+      <div style="margin-top:18px">
+        <button id="startBtn" class="start-btn" aria-label="Start quiz">Start Quiz</button>
+      </div>
+    </div>
+
+    <!-- question view template (injected by JS) -->
+    <div id="questionView" style="display:none;width:100%">
+      <div class="question" id="qText"></div>
+      <div class="answers" id="answersList" role="list"></div>
+      <div class="meta">
+        <div class="muted" id="qCounter">Question 1 of 7</div>
+        <div class="muted" id="hint">Click an answer to continue</div>
+      </div>
+    </div>
+
+    <!-- result view -->
+    <div id="resultView" style="display:none;">
+      <div class="result" id="resultContent" role="status"></div>
+    </div>
+  </main>
+</div>
+
+<script src="quiz-script.js"></script>
+</body>
+</html>
