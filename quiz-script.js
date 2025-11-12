@@ -264,10 +264,10 @@ function showResult() {
 
   resultContent.innerHTML = `
     <div style="max-width:720px;margin:0 auto;">
-      <p><small>You are the...</small></p>
-      <h1>${program.badge}</h1>
+      <p>You are the...</p>
+      <p class="badge">${program.badge}</h1>
       <p>and would be most interested in...</p>
-      <h2>${program.label}</h2>
+      <p class="label">${program.label}</h2>
       <p>${program.blurb}</p>
       <a class="learn-more" href="${program.link}" aria-label="Learn more about ${program.label}">Learn more</a>
       <a class="retake" href="#" id="retakeBtn">Retake Quiz</a>
