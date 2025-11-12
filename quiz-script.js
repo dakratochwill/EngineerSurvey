@@ -263,7 +263,6 @@ function showResult() {
   const program = topProgramFromScores();
 
   resultContent.innerHTML = `
-    <div style="max-width:720px;margin:0 auto;">
       <p>You are the...</p>
       <p class="badge">${program.badge}</h1>
       <p>and would be most interested in...</p>
@@ -271,7 +270,6 @@ function showResult() {
       <p style="max-width:500px;margin:0 auto;">${program.blurb}</p>
       <a class="learn-more" href="${program.link}" aria-label="Learn more about ${program.label}">Learn more</a>
       <a class="retake" href="#" id="retakeBtn">Retake Quiz</a>
-    </div>
   `;
 
   resultContent.animate(
